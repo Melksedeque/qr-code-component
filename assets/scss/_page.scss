@@ -1,0 +1,49 @@
+main.page {
+    background: $light_gray;
+    padding: 15rem 2rem;
+    section.qrcode {
+        background: $white;
+        border-radius: 1rem;
+        height: auto;
+        margin: 0 auto;
+        padding: 25px;
+        text-align: center;
+        width: 315px;
+        img {
+            border-radius: .75rem;
+            width: 100%;
+        }
+        h2 {
+            color: $dark_blue;
+            font: bold 22px $font;
+            margin: 20px 0;
+        }
+        p {
+            color: $grayish_blue;
+            font: 400 15px $font;
+            margin: 0 auto 20px;
+        }
+    }
+}
+
+footer.attribution {
+    background: $grayish_blue;
+    color: $white;
+    font: 400 12px $font;
+    padding: 1rem;
+    text-align: center;
+    a {
+        color: $dark_blue;
+        text-decoration: none;
+        transition: all .25s ease;
+        &:hover {
+            color: darken($white, 20%);
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    main.page {
+        padding: 10rem 1rem;
+    }
+}
